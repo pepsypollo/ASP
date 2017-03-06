@@ -27,8 +27,8 @@
 			response.write("<table border><tr><td>Matricula</td><td>Modelo</td><td>Marca</td><td>Nº Puertas</td><td>Categoria</td><td>Precio</td>")
 		if (session("id")=0) then
 			response.write("<td>Modificar</td>")
-			response.write("</tr>")
 		end if
+		response.write("</tr>")
 			do while not rs.eof
 				response.write("<tr><td>")
 				response.write(rs("matricula"))

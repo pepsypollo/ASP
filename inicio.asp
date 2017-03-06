@@ -6,6 +6,11 @@
 </head>
 <body>
 	<%
+		if (strcomp(session("id"),"")) then
+			session.abandon
+			response.write(session("id"))
+			response.redirect "index.html"
+		end if
 		user=request.form("user")
 		pass=request.form("pass")
 		consulta="SELECT codigo,nombre FROM cliente WHERE nick='"&user&"' AND pass='"&pass&"';"

@@ -8,35 +8,27 @@
 	<ul>
 		<%
 			if (session("id")=0) then
-				response.write("<li><a href=''>Introducir nuevo cliente</a></li>")
-				response.write("<li><a href=''>Listar todos los clientes</a></li>")
-				response.write("<li><a href=''>Buscar cliente por nombre</a></li>")
+				response.write("<li><a href='sec/cli/nuevo.asp'>Introducir nuevo cliente</a></li>")
 			end if
 		%>
-		<li><a href="">Ver factura</a></li>
 	</ul>
 	<a href="sec/vehi/index.asp">Vehículos</a>
 	<ul>
 		<%
 			if (session("id")=0) then
-				response.write("<li><a href=''>Introducir nuevo vehículo</a></li>")
-				response.write("<li><a href=''>Modificar vehículo</a></li>")
-				response.write("<li><a href=''>Buscar vehículo</a></li>")
+				response.write("<li><a href='sec/vehi/nuevo.asp'>Introducir nuevo vehículo</a></li>")
 			end if
 		%>
-		<li><a href="">Listar todos los vehículos</a></li>
 	</ul>
 	<a href="sec/res/index.asp">Reservas</a>
 	<ul>
 		<%
 			if (session("id")=0) then
-				response.write("<li><a href=''>Introducir nueva reserva</a></li>")
-				response.write("<li><a href=''>Borrar reservas canceladas</a></li>")
+				response.write("<li><a href='sec/res/nuevo.asp'>Introducir nueva reserva</a></li>")
 			end if
 		%>
-		<li><a href="">Buscar reserva</a></li>
-		<li><a href="">Listado reservas</a></li>
-		<li><a href="">Ver factura</a></li>
+		<li><a href="sec/res/factura.asp">Ver factura</a></li>
 	</ul>
+	<a href="inicio.asp">Cerrar sesion</a>
 </body>
 </html>
