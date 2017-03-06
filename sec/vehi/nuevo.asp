@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title>Nuevo Cliente</title>
+	<link rel="stylesheet" type="text/css" href="../../general.css">
 </head>
 <body>
 	<form action="#" method="post" accept-charset="utf-8">

@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="../../general.css">
 	<title>Vehiculos</title>
 </head>
 <body>
